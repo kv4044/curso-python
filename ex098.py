@@ -10,13 +10,13 @@ def contagem(i, f, p):
     if i < f:
         cont = i
         while cont <= f:
-            print(cont, end=' ')
+            print(cont, end=' ', flush=True)
             cont += p
             sleep(0.3)
     else:
         cont = i
         while cont >= f:
-            print(cont, end=' ')
+            print(cont, end=' ', flush=True)
             cont -= p
             sleep(0.3)
     print('FIM!')
